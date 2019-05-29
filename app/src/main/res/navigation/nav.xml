@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav"
+            app:startDestination="@id/fragment_questions"
+>
+    <fragment
+        android:id="@+id/fragment_questions"
+        android:name="io.schiar.tcc.view.QuestionsFragment"
+        android:label="@string/questions"
+        tools:layout="@layout/fragment_questions">
+        <action
+            android:id="@+id/fragment_questions_to_fragment_question_detail"
+            app:destination="@id/fragment_question_detail"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_question_detail"
+        android:name="io.schiar.tcc.view.QuestionDetailFragment"
+        android:label="@string/question_details">
+
+        <action
+            android:id="@+id/fragment_question_detail_to_fragment_questions"
+            app:destination="@id/fragment_questions"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+</navigation>

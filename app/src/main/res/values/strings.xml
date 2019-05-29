@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="pt">
+    <string name="app_name">StackOverflow Questions</string>
+    <string name="questions">StackOverflow Questions</string>
+    <string name="link">Go to site</string>
+    <string name="question_details">Post details</string>
+    <string name="description">Description:</string>
+    <string name="profile_photo">Photo of the Poster</string>
+</resources>
